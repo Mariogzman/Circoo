@@ -1,0 +1,173 @@
+/* Estilo global */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/carrucel3.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.question-container p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones de respuesta */
+.answer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 335px; /* Espacio encima de los botones */
+    flex-wrap: wrap;
+}
+
+.answer-buttons button {
+    border-radius: 10px; /* Ajusta el valor para mayor o menor redondeo */
+    padding: 15px 40px; /* Espaciado interno del botón */
+    border: 1px solid #f2ad24; /* Borde del botón */
+    background-color: #f2ad24; /* Color de fondo del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+
+.answer-button {
+    padding: 12px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2ad24; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    transition: background-color 0.3s ease;
+}
+
+.answer-button:hover {
+    background-color: #c00505; /* Color de fondo en hover */
+}
+/* Estilos para los botones de control */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajusta la separación entre botones */
+    margin-top: 20px; /* Ajusta el margen superior */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples líneas si es necesario */
+}
+
+.control-buttons button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+}
+
+.control-buttons button:hover {
+    background-color: #218838;
+}
+
+.control-buttons .start-button {
+    background-color: #007bff;
+}
+
+.control-buttons .check-button {
+    background-color: #ffc107;
+}
+
+.control-buttons .next-button {
+    background-color: #17a2b8;
+}
+
+.control-buttons .retry-button {
+    background-color: #dc3545;
+}
+
+/* Estilos generales para los botones de control */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: px; /* Espacio superior */
+}
+
+/* Estilos para todos los botones de control */
+.control-buttons button {
+    padding: 15px 25px; /* Tamaño del botón */
+    font-size: 1.1em; /* Tamaño del texto */
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s, transform 0.3s; /* Efectos de transición */
+}
+
+/* Estilos específicos para cada botón */
+
+/* Botón de Inicio */
+#start {
+    background-color: #007bff; /* Azul */
+}
+
+#start:hover {
+    background-color: #0056b3; /* Azul oscuro en hover */
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Botón de Comprobar */
+#check {
+    background-color: #ffc107; /* Amarillo */
+}
+
+#check:hover {
+    background-color: #e0a800; /* Amarillo oscuro en hover */
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Botón de Siguiente */
+#next {
+    background-color: #17a2b8; /* Cian */
+}
+
+#next:hover {
+    background-color: #138496; /* Cian oscuro en hover */
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Botón de Reintentar */
+#retry {
+    background-color: #dc3545; /* Rojo */
+}
+
+#retry:hover {
+    background-color: #c82333; /* Rojo oscuro en hover */
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}

@@ -1,0 +1,50 @@
+/* Asegura que html y body ocupen el 100% del ancho y alto */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/circo de matematicas.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 125px;
+}
+
+.puertas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    gap: 0px; /* Espacio entre las puertas */
+    margin-top: -100px; /* Ajusta este valor para mover el contenedor hacia arriba o abajo */
+    margin-left: 265px;
+}
+
+.puerta {
+    width: calc(100% - 100px); /* Ajusta el ancho de cada puerta y espacio entre ellas */
+    max-width: 200px; /* Asegura que las puertas no se expandan más de 200px */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.puerta img {
+    width: 100%;
+    height: auto;
+}
+
+.puerta img:hover {
+    transform: scale(1.1);
+}

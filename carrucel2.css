@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/Carrucel2.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.question-container p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones de respuesta */
+.answer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 360px; /* Margen superior usando vh para mejor responsividad */
+    flex-wrap: wrap; /* Permite que los botones se acomoden en múltiples líneas si es necesario */
+}
+
+.answer-buttons button, .answer-button {
+    border-radius: 10px; /* Ajusta el valor para mayor o menor redondeo */
+    padding: 15px 40px; /* Espaciado interno del botón */
+    border: 1px solid #f2ad24; /* Borde del botón */
+    background-color: #f2ad24; /* Color de fondo del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em;
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    transition: background-color 0.3s ease;
+}
+
+.answer-button:hover, .answer-buttons button:hover {
+    background-color: #c00505; /* Color de fondo en hover */
+}
+
+/* Estilos para los botones de control */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajusta la separación entre botones */
+    margin-top: 20px; /* Ajusta el margen superior */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples líneas si es necesario */
+}
+
+.control-buttons button {
+    padding: 12px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilos específicos para cada botón */
+#start {
+    background-color: #007bff;
+}
+
+#start:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#check {
+    background-color: #ffc107;
+}
+
+#check:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+#next {
+    background-color: #17a2b8;
+}
+
+#next:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+#retry {
+    background-color: #dc3545;
+}
+
+#retry:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Media Queries para ajustar el diseño en diferentes pantallas */
+@media (max-width: 768px) {
+    .answer-buttons, .control-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .answer-buttons button, .answer-button, .control-buttons button {
+        padding: 20px 30px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .question-container p {
+        font-size: 1.2em;
+    }
+}

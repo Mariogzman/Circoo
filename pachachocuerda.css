@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita el desplazamiento */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/fondocuerda.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+h1 {
+    color: #333;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px;
+}
+.box {
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0; /* Establece un margen inferior de 20px */
+    margin-top: -100px; /* Ajusta el margen superior para subir los cuadros */
+    padding-bottom: 100px; /* Añade un margen inferior interno dentro de cada cuadro */
+    border: 2px solid #ffffff; /* Borde negro de 2px */
+}
+
+
+.object {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: grab;
+    margin: 5px;
+    margin-top: 230px;
+}
+.balance-bar {
+    position: relative;
+    width: 350px;
+    height: 20px;
+    background-color: #382020;
+    margin: 0 auto;
+}
+.balance-point {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.clown {
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    width: 100px;
+    height: 100px;
+    background-image: url('Imagenes/ultimopachacho.png');
+    background-size: contain;
+    transform: translate(-50%, 0);
+    transition: top 0.5s;
+}
+.falling {
+    top: 100px;
+}
+.objects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -200px;
+}
+/* Contenedor de botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 50px; /* Espacio superior */
+}
+
+/* Estilos generales para los botones de control */
+.control-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto hover para todos los botones */
+.control-button:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Estilos específicos para cada botón */
+.retry-button {
+    background-color: #dc3545; /* Rojo */
+}
+
+.retry-button:hover {
+    background-color: #c82333; /* Rojo oscuro en hover */
+}
+
+.start-button {
+    background-color: #007bff; /* Azul */
+}
+
+.start-button:hover {
+    background-color: #0056b3; /* Azul oscuro en hover */
+}
+
+.check-button {
+    background-color: #ffc107; /* Amarillo */
+}
+
+.check-button:hover {
+    background-color: #e0a800; /* Amarillo oscuro en hover */
+}

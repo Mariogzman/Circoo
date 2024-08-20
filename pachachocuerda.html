@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilibrio en la Cuerda</title>
+    <link rel="stylesheet" href="pachachocuerda.css">
+</head>
+<body>
+    <p id="instruction">.</p>
+    <div class="container">
+        <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="balance-bar">
+            <div class="balance-point"></div>
+            <div class="clown" id="clown"></div>
+        </div>
+        <div class="box" id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="objects-container" id="objects-container">
+        <div class="object" id="object1" draggable="true" ondragstart="drag(event)" style="background-color: #ff6347;"></div>
+        <div class="object" id="object2" draggable="true" ondragstart="drag(event)" style="background-color: #ffd700;"></div>
+        <div class="object" id="object3" draggable="true" ondragstart="drag(event)" style="background-color: #4caf50;"></div>
+        <div class="object" id="object4" draggable="true" ondragstart="drag(event)" style="background-color: #1e90ff;"></div>
+        <div class="object" id="object5" draggable="true" ondragstart="drag(event)" style="background-color: #ff69b4;"></div>
+        <div class="object" id="object6" draggable="true" ondragstart="drag(event)" style="background-color: #ff4500;"></div>
+        <div class="object" id="object7" draggable="true" ondragstart="drag(event)" style="background-color: #6a5acd;"></div>
+        <div class="object" id="object8" draggable="true" ondragstart="drag(event)" style="background-color: #ffb6c1;"></div>
+        <div class="object" id="object9" draggable="true" ondragstart="drag(event)" style="background-color: #8a2be2;"></div>
+        <div class="object" id="object10" draggable="true" ondragstart="drag(event)" style="background-color: #00ff7f;"></div>
+    </div>
+    <div class="buttons-container">
+        <button class="control-button check-button" onclick="irinicio()">Inicio</button>
+        <button class="control-button retry-button" onclick="resetGame()">Reiniciar</button>
+        <button class="control-button start-button" onclick="toggleMode()">Cambiar</button>
+        <button class="control-button check-button" onclick="checkBalance()">Comprobar</button>
+    </div>
+    
+    <script src="pachachocuerda.js"></script>
+
+</body>
+</html>

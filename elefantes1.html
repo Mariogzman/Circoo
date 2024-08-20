@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijuego: Arrastra los Elefantes</title>
+    <link rel="stylesheet" href="elefantes.css">
+</head>
+<body>
+    <main>
+        
+        <!-- Cuadro para los elefantes -->
+        <div class="drop-zone adjusted-position" id="dropZone">
+            <p>Coloca aquí los elefantes</p>
+        </div>
+        
+
+        <!-- Imágenes de elefantes para arrastrar -->
+        <div class="elephant-images">
+            <img src="Imagenes/elefante.png" alt="Elefante 1" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 2" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 3" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 4" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 5" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 6" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 7" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 8" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 9" class="draggable" draggable="true">
+            <img src="Imagenes/elefante.png" alt="Elefante 10" class="draggable" draggable="true">
+        </div>
+
+        <!-- Botones de control -->
+        <div class="spacer"></div> <!-- Marco invisible para ajustar la altura -->
+        <div class="control-buttons">
+            <button id="check">Comprobar</button>
+            <button id="start">Inicio</button>
+            <button id="next">Siguiente</button>
+            <button id="retry">Reintentar</button>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="elefantes.js"></script>
+</body>
+</html>

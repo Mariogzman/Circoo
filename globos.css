@@ -1,0 +1,117 @@
+/* Establece la disposición del cuerpo de la página */
+body {
+    display: flex; /* Utiliza Flexbox para la disposición */
+    flex-direction: column; /* Ordena los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el contenido cubra al menos la altura de la ventana */
+    background-color: #f5f5f5; /* Color de fondo de la página */
+    background-image: url('Imagenes/fondoglobos.png'); /* Imagen de fondo */
+    background-size: contain; /* Ajusta el tamaño de la imagen para que quepa sin recortar */
+    background-position: center top; /* Posiciona la imagen en el centro superior */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+body {
+    display: flex; /* Utiliza Flexbox para organizar el contenido en un contenedor flexible */
+    flex-direction: column; /* Coloca los elementos hijos en una columna (de arriba a abajo) */
+    align-items: center; /* Centra horizontalmente los elementos hijos */
+    height: 100vh; /* La altura de la vista completa del navegador */
+    background-color: #f0f0f0; /* Establece el color de fondo de la página */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    position: relative; /* Posiciona el cuerpo como referencia para elementos posicionados absolutamente */
+}
+
+.objects-container {
+    display: flex; /* Utiliza Flexbox para organizar los objetos */
+    justify-content: center; /* Centra los objetos horizontalmente */
+    flex-wrap: wrap; /* Permite que los objetos se envuelvan a la siguiente línea si es necesario */
+    gap: 10px; /* Establece un espacio de 10px entre los objetos */
+    margin-bottom: 100px; /* Añade un margen inferior de 20px */
+}
+
+.draggable {
+    width: 80px; /* Establece el ancho de los objetos arrastrables */
+    height: 80px; /* Establece la altura de los objetos arrastrables */
+    cursor: grab; /* Cambia el cursor a una mano abierta para indicar que el objeto es arrastrable */
+}
+
+.game-container {
+    display: flex; /* Utiliza Flexbox para organizar el contenido */
+    justify-content: space-around; /* Distribuye el espacio restante equitativamente alrededor de los elementos hijos */
+    width: 60%; /* Establece el ancho del contenedor al 60% del contenedor padre */
+    margin-top: 20px; /* Añade un margen superior de 20px para subir los cuadros */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Añade un espacio de 20px entre las zonas de soltado */
+    width: 80%; /* Establece el ancho del contenedor al 80% del contenedor padre */
+}
+
+.drop-zone {
+    width: 350px; /* Establece el ancho de cada zona de soltado */
+    height: 200px; /* Establece la altura de cada zona de soltado */
+    border:  dashed #ccc; /* Añade un borde punteado alrededor de cada zona */
+    display: flex; /* Utiliza Flexbox para organizar el contenido interno */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-size: 18px; /* Establece el tamaño de la fuente para el texto */
+    color: #333; /* Establece el color del texto */
+    position: relative; /* Permite el uso de posicionamiento absoluto para elementos hijos si es necesario */
+}
+
+@media (min-width: 768px) {
+    .drop-zone {
+        flex-basis: calc(33.333% - 40px); /* Tres elementos por fila, menos el espacio de separación */
+    }
+}
+
+
+.buttons-container {
+    position: absolute; /* Posiciona los botones de manera absoluta respecto al contenedor padre */
+    bottom: -200px; /* Ajusta este valor para bajar los botones */
+    display: flex; /* Utiliza Flexbox para organizar los botones */
+    justify-content: space-around; /* Distribuye los botones con espacio equitativo alrededor de ellos */
+    width: 80%; /* Establece el ancho del contenedor de botones al 80% del contenedor padre */
+}
+
+
+button {
+    padding: 10px 20px; /* Añade espacio interior de 10px en la parte superior e inferior, y 20px en los lados */
+    font-size: 16px; /* Establece el tamaño de la fuente de los botones */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    background-color: #5b6fbb; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios de color y transformación */
+}
+
+
+button:hover {
+    background-color: #a04545; /* Color de fondo más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+button:active {
+    background-color: #8e753e; /* Color de fondo más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra reducida al hacer clic */
+    transform: scale(1); /* Vuelve al tamaño original al hacer clic */
+}
+
+

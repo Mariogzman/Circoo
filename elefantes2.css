@@ -1,0 +1,138 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/fondoelefant.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Imagen de referencia */
+.reference-image {
+    margin-bottom: 20px;
+}
+
+.reference-image img {
+    width: 200px;
+    height: auto;
+}
+
+/* Cuadro para soltar los elefantes */
+.drop-zone {
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #000; /* Borde del cuadro */
+    background-color: #e0f7fa; /* Color de fondo del cuadro, elige el color que prefieras */
+    margin: 40px 0 0 40px; /* Ajusta el margen superior e izquierdo */
+    position: relative; /* Mantiene la capacidad de usar top/left */
+    overflow: hidden; /* Asegura que los elefantes no se salgan del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del cuadro para dar profundidad */
+}
+
+.drop-zone p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Opcional: Ajusta la posición para mover el cuadro con precisión */
+.drop-zone.adjusted-position {
+    top: 20px; /* Ajusta la distancia desde el contenedor padre */
+    left: 180px; /* Ajusta la distancia desde el contenedor padre */
+}
+
+
+/* Imágenes de elefantes */
+.elephant-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0px; /* Ajusta el margen superior para mover las imágenes hacia abajo */
+}
+
+.elephant-images img {
+    width: 60px;
+    height: 60px;
+    cursor: grab;
+}
+
+/* Botones de control */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px; /* Ajusta el margen superior para mover los botones hacia abajo */
+}
+
+.control-buttons button {
+    padding: 15px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe552;
+    color: rgb(0, 0, 0);
+}
+
+.control-buttons button:hover {
+    background-color: #882121;
+}
+
+.control-buttons .start-button {
+    background-color: #007bff;
+}
+
+.control-buttons .check-button {
+    background-color: #ffc107;
+}
+
+.control-buttons .next-button {
+    background-color: #17a2b8;
+}
+
+.control-buttons .retry-button {
+    background-color: #dc3545;
+}
+
+/* Cuadro para soltar los elefantes */
+.drop-zone {
+    width: 400px;
+    height: 250px;
+    border: 2px dashed #000;
+    margin: 50px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+/* Estilo para las imágenes dentro del cuadro de arrastre */
+.drop-zone img {
+    max-width: 100%; /* Asegura que las imágenes no sean más grandes que el contenedor */
+    max-height: 100%; /* Asegura que las imágenes no sean más grandes que el contenedor */
+}
